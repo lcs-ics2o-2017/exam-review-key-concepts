@@ -6,8 +6,6 @@ import PlaygroundSupport
 /*:
  ## Exercise
 
- Attempt to reproduce this image:
- 
  Each image is exactly 400 pixels wide by 600 pixels tall.
  
  Your goal is to precisely reproduce this image (the underlying image, not the planning grid):

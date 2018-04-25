@@ -7,9 +7,9 @@
         <page name='Sequence'/>
         <page name='Colour'/>
         <page name='Exercise - Sequence'/>
-        <page name='Variables and Operators'/>
         <page name='Iteration with For-In Loops'/>
         <page name='Conditional Statements'/>
+        <page name='Variables and Operators'/>
         <page name='Exercise - Loops and Conditionals'/>
     </pages>
 </playground>
