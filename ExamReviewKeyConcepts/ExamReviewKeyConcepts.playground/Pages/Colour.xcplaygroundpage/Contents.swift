@@ -1,0 +1,59 @@
+//: [Previous](@previous) / [Next](@next)
+//: # Colour
+//: The following two statements are required to make the playground run. Please do not remove.
+import Cocoa
+import PlaygroundSupport
+/*:
+ ## Hue-Saturation-Brightness (HSB)
+ For details on how this works, [review the following PDF file](http://russellgordon.ca/lcs/HSB_Color_Model_Summary_Swift.pdf)
+ To summarize:
+ * hue: the "shade" of the colour
+ * saturation: colour intensity
+ * brightness: colour brightness
+ 
+ This is best explored interactively by [downloading and running this program](http://russellgordon.ca/lcs/c3d.zip).
+ ### Analogous colour
+ Analogous colours are nearby each other on the colour wheel.
+ 
+ The HSB colour model makes it very easy to program colour changes.
+ 
+ For example:
+ */
+// Create canvas
+let canvas = Canvas(width: 360, height: 300)
+
+// Line width
+canvas.defaultLineWidth = 5
+
+// Draw lines next to each other with analogous colours
+// NOTE: Try changing the "from" and "to" arguments on the line below
+for i in stride(from: 180, through: 240, by: 10) {
+    
+    // Set line colour
+    canvas.lineColor = Color(hue: Float(i), saturation: 80, brightness: 90, alpha: 100)
+    
+    // Draw the line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: canvas.height)
+    
+}
+
+/*:
+ ### Basic colours
+ 
+ The Color class provided in this playground (and in the exam environment) also makes it possible to use basic colours with a "shortcut".
+ 
+ For example:
+ */
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color.red        // try changing this to another colour
+canvas.drawEllipse(centreX: 5, centreY: canvas.height / 2, width: 10, height: 10)
+canvas.fillColor = Color.blue
+canvas.drawEllipse(centreX: 15, centreY: canvas.height / 2, width: 10, height: 10)
+canvas.fillColor = Color.green
+canvas.drawEllipse(centreX: 25, centreY: canvas.height / 2, width: 10, height: 10)
+/*:
+ ## Template code
+ The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
+ */
+PlaygroundPage.current.liveView = canvas.imageView

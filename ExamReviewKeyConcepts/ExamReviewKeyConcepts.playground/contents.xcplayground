@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Introduction'/>
+        <page name='Readable code, part 1'/>
+        <page name='Readable code, part 2'/>
+        <page name='Sequence'/>
+        <page name='Colour'/>
+        <page name='Exercise - Sequence'/>
+        <page name='Variables and Operators'/>
+        <page name='Iteration with For-In Loops'/>
+        <page name='Conditional Statements'/>
+        <page name='Exercise - Loops and Conditionals'/>
+    </pages>
+</playground>
