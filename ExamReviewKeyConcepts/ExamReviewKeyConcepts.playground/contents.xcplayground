@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
+<playground version='6.0' target-platform='macos' display-mode='raw' executeOnSourceChanges='false'>
     <pages>
         <page name='Introduction'/>
         <page name='Readable code, part 1'/>
@@ -10,6 +10,5 @@
         <page name='Iteration with For-In Loops'/>
         <page name='Conditional Statements'/>
         <page name='Variables and Operators'/>
-        <page name='Exercise - Loops and Conditionals'/>
     </pages>
 </playground>
