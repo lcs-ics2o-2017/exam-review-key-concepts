@@ -42,5 +42,5 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
-PlaygroundPage.current.liveView = canvas.imageView
+PlaygroundPage.current.liveView = canvas
 

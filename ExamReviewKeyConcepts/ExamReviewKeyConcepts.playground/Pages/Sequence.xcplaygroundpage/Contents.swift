@@ -16,9 +16,9 @@ canvas.drawShapesWithBorders = false
 
 // Draw circles
 canvas.fillColor = Color.blue
-canvas.drawEllipse(centreX: 175, centreY: canvas.height / 2, width: 100, height: 100)
+canvas.drawEllipse(at: Point(x: 175, y: canvas.height / 2), width: 100, height: 100)
 canvas.fillColor = Color.red
-canvas.drawEllipse(centreX: 225, centreY: canvas.height / 2, width: 100, height: 100)
+canvas.drawEllipse(at: Point(x: 225, y: canvas.height / 2), width: 100, height: 100)
 
 /*:
  ## Notes
@@ -27,4 +27,4 @@ canvas.drawEllipse(centreX: 225, centreY: canvas.height / 2, width: 100, height:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
-PlaygroundPage.current.liveView = canvas.imageView
+PlaygroundPage.current.liveView = canvas

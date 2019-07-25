@@ -34,7 +34,7 @@ canvas.defaultLineWidth = 5
 for y in stride(from: 0, through: 400, by: 50) {
 
     // Draw each rung
-    canvas.drawLine(fromX: 100, fromY: y, toX: 200, toY: y)
+    canvas.drawLine(from: Point(x: 100, y: y), to: Point(x: 200, y: y))
 }
 /*:
  ### Counting backwards
@@ -52,4 +52,4 @@ print("Blast off!")
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
-PlaygroundPage.current.liveView = canvas.imageView
+PlaygroundPage.current.liveView = canvas

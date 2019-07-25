@@ -37,7 +37,7 @@ if hairColour == "purple" {
  */
 
 // Generate a random number between 1 and 10
-var number = random(from: 1, toButNotIncluding: 11)
+var number = Int.random(in: 1...10)
 
 // State whether the number is "high"
 if number > 5 {
@@ -51,7 +51,7 @@ if number > 5 {
  You can chain multiple *if* statements together if needed:
  */
 // Generate a random number between 10 and 40
-var anotherNumber = random(from: 10, toButNotIncluding: 41)
+var anotherNumber = Int.random(in: 10...40)
 if anotherNumber < 20 {
     print("low")
 } else if anotherNumber < 30 {
@@ -94,4 +94,4 @@ if speaks == "French" && disposition == "Cheerful" {
 // Create canvas
 let canvas = Canvas(width: 200, height: 200)
 
-PlaygroundPage.current.liveView = canvas.imageView
+PlaygroundPage.current.liveView = canvas

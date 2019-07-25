@@ -71,11 +71,10 @@ for counter in 1...7 {
     }
     
     // Draw the circle
-    canvas.drawEllipse(centreX: x, centreY: canvas.height / 2, width: 50, height: 50)
-    
+    canvas.drawEllipse(at: Point(x: x, y: canvas.height / 2), width: 50, height: 50)    
 }
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
-PlaygroundPage.current.liveView = canvas.imageView
+PlaygroundPage.current.liveView = canvas

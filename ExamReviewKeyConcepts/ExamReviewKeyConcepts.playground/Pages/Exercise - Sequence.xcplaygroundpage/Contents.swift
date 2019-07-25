@@ -38,16 +38,17 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // No border, has a fill
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
-canvas.drawEllipse(centreX: 100, centreY: 100, width: 50, height: 75)
+canvas.drawEllipse(at: Point(x: 100, y: 100), width: 50, height: 75)
 
 // Has a border, no fill
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
-canvas.drawEllipse(centreX: 200, centreY: 100, width: 50, height: 75)
+canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
+
 
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
-PlaygroundPage.current.liveView = canvas.imageView
+PlaygroundPage.current.liveView = canvas
 
