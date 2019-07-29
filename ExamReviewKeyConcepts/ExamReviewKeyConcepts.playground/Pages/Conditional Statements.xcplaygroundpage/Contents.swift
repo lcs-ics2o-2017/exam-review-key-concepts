@@ -13,9 +13,11 @@ import PlaygroundSupport
  
  For example:
  */
-let hairColour = "purple"
-if hairColour == "purple" {
+let hairColor = getRandomHairColor()
+if hairColor == "Purple" {
     print("Ravishing! I love it!")
+} else {
+    print("Well, it's still very nice.")
 }
 /*:
  ### Comparison operators

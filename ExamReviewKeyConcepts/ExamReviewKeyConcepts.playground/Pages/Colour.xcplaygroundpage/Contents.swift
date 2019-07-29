@@ -5,7 +5,8 @@ import Cocoa
 import PlaygroundSupport
 /*:
  ## Hue-Saturation-Brightness (HSB)
- For details on how this works, [review the following PDF file](http://russellgordon.ca/lcs/HSB_Color_Model_Summary_Swift.pdf)
+ For details on how this works, [review the following PDF file](http://russellgordon.ca/lcs/HSB_Color_Model_Summary_Swift.pdf).
+ 
  To summarize:
  * hue: the "shade" of the colour
  * saturation: colour intensity
@@ -47,12 +48,15 @@ for i in stride(from: 180, through: 240, by: 10) {
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
 
-canvas.fillColor = Color.red        // try changing this to another colour
+// Set the fill color using a predefined color – a shortcut – on the Color class
+canvas.fillColor = Color.red
 canvas.drawEllipse(at: Point(x: 25, y: canvas.height / 2), width: 50, height: 50)
 
+// Draw a blue circle
 canvas.fillColor = Color.blue
 canvas.drawEllipse(at: Point(x: 75, y: canvas.height / 2), width: 50, height: 50)
 
+// Draw a green circle
 canvas.fillColor = Color.green
 canvas.drawEllipse(at: Point(x: 125, y: canvas.height / 2), width: 50, height: 50)
 
