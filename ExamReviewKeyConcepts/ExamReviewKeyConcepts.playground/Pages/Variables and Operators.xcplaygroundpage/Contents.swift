@@ -38,7 +38,7 @@ a = b
  
  Here's how the remainder operator works. To calculate 9 % 4, you first work out how many 4's will fit in 9:
  
- ![remainder](remainder.png "Remainder")
+ ![remainder](remainder_2x.png "Remainder")
  
  Two 4's fit inside 9, so the remainder is 1 (shown in orange).
  
